@@ -6,7 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>department Services — Brand Strategy</title>
+    
+    <title>department / Brand Strategy</title>
     <style>
         * {
             margin: 0;
@@ -22,7 +23,7 @@
             font-size: 14px;
             letter-spacing: 0.03em;
             line-height: 1.5;
-            height: 100vh;
+            min-height: 100vh; /* Changed height to min-height to prevent cutting off on small screens */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -62,6 +63,7 @@
             letter-spacing: 0.0em;
             background-color: #0000FF;
             border: 1px solid #0000FF;
+            cursor: default;
         }
 
         .dept:hover {
@@ -72,34 +74,44 @@
 
         a {
             color: #0000FF;
-            font-size: 11px;
-            font-family: "Google Sans Code", monospace, "Apple Color Emoji";
             text-decoration: underline;
-            text-transform: uppercase;
             text-decoration-thickness: 1px;
             text-underline-offset: 4px;
-            letter-spacing: 0.08em;
             cursor: pointer;
-            transition: opacity 0.2s ease-out;
         }
 
         a:hover {
             opacity: 0.5;
         }
 
-        .footer {
+        .mailto {
+            font-size: 11px;
+            font-family: "Google Sans Code", monospace, "Apple Color Emoji"; /* Google */
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+        }
+
+        .mailto:hover {
+            opacity: 0.5;
+        }
+
+        .footer-section {
             margin-top: 4.0rem;
             margin-bottom: 0rem;
         }
 
-        .footer p {
+        .footer-text {
             font-family: Arial, sans-serif, "Apple Color Emoji";
             font-size: 11px;
             font-weight: bold;
             letter-spacing: 0.0em;
+            color: #000;
         }
     </style>
-    </head>
+</head>
 <body>
 
     <main class="container">
@@ -109,19 +121,18 @@
                 <span class="dept">department</span> is a strategy consultancy that partners with founders and leadership teams to build and scale design-led businesses.
             </p>
             <p>
-                Operating as an embedded extension of the team, <span class="dept">department</span> blends rigorous data analysis and commercial forecasting with cultural insight, creative intuition, and a sharp understanding of modern consumer behavior.  Services include brand strategy, launch and go-to-market planning, international expansion, digital marketing architecture, and performance analytics.
+                Operating as an embedded extension of the team, <span class="dept">department</span> blends rigorous data analysis and commercial forecasting with cultural insight, creative intuition, and a sharp understanding of modern consumer behavior. Services include brand strategy, launch and go-to-market planning, international expansion, digital marketing architecture, ecommerce operations, and performance analytics.
             </p>
             <p>
-                <a href="mailto:work@hidept.com?subject=Inquiry from hidepartment.com" target="_blank">work@hidept.com</a>
+                <a href="mailto:work@hidept.com?subject=Inquiry from hidepartment.com" target="_blank" class="mailto">work@hidept.com</a>
             </p>
         </section>
 
-        <section class="footer">
-            <p><span class="footer">—<br>© department, ２０２６</span></p>
+        <section class="footer-section">
+            <p class="footer-text">—<br>© department, ２０２６</p>
         </section>
 
     </main>
 
 </body>
-
 </html>

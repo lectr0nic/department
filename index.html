@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon: 3D Isometric Cube in Department Blue -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z' fill='%230000FF'/><path d='M16 2 L28 9 L16 16 L4 9 Z' fill='%233333FF'/><path d='M16 16 L28 9 L28 23 L16 30 Z' fill='%230000CC'/></svg>">
+    
+    <!-- Fonts: Work Sans for body, Roboto Mono for technical elements -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z' fill='%230000FF'/><path d='M16 2 L28 9 L16 16 L4 9 Z' fill='%233333FF'/><path d='M16 16 L28 9 L28 23 L16 30 Z' fill='%230000CC'/></svg>">
-
-    <title>department ___ Brand Strategy _ Performance Marketing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>dept — Marketing Technology Agency</title>
     <style>
         * {
             margin: 0;
@@ -20,9 +23,10 @@
         body {
             background-color: #F9F8F6;
             color: #000;
-            font-family: Arial, sans-serif, "Apple Color Emoji";
+            /* Updated to Work Sans */
+            font-family: "Work Sans", Arial, sans-serif, "Apple Color Emoji";
             font-size: 14px;
-            letter-spacing: 0.03em;
+            letter-spacing: -0.01em; /* Work Sans looks better with a tighter tracking */
             line-height: 1.5;
             min-height: 100vh;
             display: flex;
@@ -34,16 +38,8 @@
         }
 
         .container {
-            width: 420px; /* 420 */
+            width: 420px;
             max-width: 100%;
-        }
-
-        h1 {
-            font-size: 14px;
-            font-weight: normal;
-            text-decoration: underline;
-            letter-spacing: 0.02em;
-            margin-bottom: 1rem;
         }
 
         .section {
@@ -58,11 +54,14 @@
 
         .dept {
             color: #FFF;
-            font-family: Arial, sans-serif, "Apple Color Emoji";
+            font-family: "Work Sans", sans-serif;
+            font-weight: 500;
             text-transform: lowercase;
             letter-spacing: 0.0em;
             background-color: #0000FF;
             border: 1px solid #0000FF;
+            padding: 0 1px;
+            cursor: default;
         }
 
         .dept:hover {
@@ -77,6 +76,7 @@
             text-decoration-thickness: 1px;
             text-underline-offset: 4px;
             cursor: pointer;
+            transition: opacity 0.2s ease-out;
         }
 
         a:hover {
@@ -85,7 +85,8 @@
 
         .mailto {
             font-size: 11px;
-            font-family: "Google Sans Code", monospace, "Apple Color Emoji"; /* Google */
+            /* Updated to Google Sans Code with Roboto Mono as fallback */
+            font-family: "Google Sans Code", "Roboto Mono", monospace, "Apple Color Emoji";
             text-transform: uppercase;
             letter-spacing: 0.08em;
             text-decoration: underline;
@@ -103,41 +104,29 @@
         }
 
         .footer-text {
-            font-family: Arial, sans-serif, "Apple Color Emoji";
+            font-family: "Work Sans", sans-serif;
             font-size: 11px;
-            font-weight: bold;
+            font-weight: 700;
             letter-spacing: 0.0em;
             color: #000;
         }
     </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0JL767RC5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-X0JL767RC5');
-</script>
 <body>
 
     <main class="container">
 
         <section class="section">
             <p>
-                <span class="dept">department</span> is a strategy consultancy that partners with founders and leadership teams to build and scale design-led businesses.
+                <span class="dept">dept</span> is a Marketing Technology Agency.
             </p>
             <p>
-                Working as an extension of the team, <span class="dept">department</span> blends rigorous data analysis and commercial forecasting with cultural insight, creative intuition, and a sharp understanding of the modern consumer. Services include brand strategy, launch and go-to-market planning, international expansion, digital marketing architecture, ecommerce operations, and performance analytics.
-            </p>
-            <p>
-                <a href="mailto:work@hidept.com?subject=Inquiry from hidepartment.com" target="_blank" class="mailto">work@hidept.com</a>
+                <a href="mailto:office@hidept.com?subject=Inquiry from hidepartment.com" target="_blank" class="mailto">office@hidept.com</a>
             </p>
         </section>
 
         <section class="footer-section">
-            <p class="footer-text">—<br>© department, ２０２６</p>
+            <p class="footer-text">—<br>© department, 2026</p>
         </section>
 
     </main>
